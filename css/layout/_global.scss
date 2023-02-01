@@ -4,4 +4,8 @@ a{
 }
 .wrapper{
     @include page;
+    
+}
+body{
+    background-color: #f4f4f4;
 }

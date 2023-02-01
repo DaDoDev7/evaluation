@@ -1,0 +1,87 @@
+.firstblock{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    row-gap: 2em;
+    column-gap: 2em;
+    .business{
+        background: url(../../img/trending/trending_top02.jpg)center/cover no-repeat;
+    }
+
+       
+    img{
+        width: 100%;
+         display: block;
+              
+        
+    }
+   .fashion,.tech,.business{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    
+       &::before{
+            content: '';
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(0,0,36);
+            background: linear-gradient(0deg, rgba(0,0,36,1) 0%, rgba(0,212,255,0) 62%);
+            z-index: 1;
+    }
+}
+
+.texthero{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding:20px;
+    color: white;
+    z-index: 2;
+
+    h1{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        transition: .3s all ease-in-out;  
+    }
+    h1:hover{
+        color: #ff2143 ;
+    }
+    small{
+        color: grey;
+        font-family: 'Roboto', sans-serif;
+    }
+    .littlebutton{
+        background-color: rgb(134, 190, 50);
+        display: inline;
+        padding: 5px 7px;
+        border-radius: 5px;
+        font-family: 'Barlow', sans-serif;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+   
+   
+}
+}
+#button1{
+    background-color: #0077b5;
+}
+#button2{
+    background-color:  rgb(222, 41, 41);
+
+}
+
+// colonne de droite flexè
+
+.rightcolumn{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    h1{
+        font-size: 22px;
+    }
+}

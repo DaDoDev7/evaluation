@@ -1,0 +1,184 @@
+.secondblock{
+    margin-bottom: 2em;
+}
+
+.news{
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap: 2em;
+    img{
+        width: 100%;
+    }
+}
+
+//colonne gauche 
+
+.newsleft{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    margin-bottom: 2em;
+    .textnewsleft{
+        @include roboto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+}
+.newsleftcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    padding: 10px;
+    
+}
+.smallnews{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    gap: 1em;
+}
+.textsmallnews{
+    @include roboto;
+   padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: space-evenly;
+    h6{
+        margin:0;
+    }
+    small{
+        font-size: 12px;
+    }
+}
+
+//news right
+
+.newsright{
+    display: flex;
+    flex-direction: column;
+}
+.rectanglesocials{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr ;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+.smallrectangle{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 1em;
+    align-items: center;
+    border:1px solid rgba(128, 128, 128, 0.234);
+    border-radius: 10px;
+    padding: 10px;
+    img{
+        width: 100%;
+    }
+    .smallrectangletext{
+        @include roboto;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span{
+            font-weight: 600;
+        }
+
+    }
+}
+
+//column right 
+
+.whattowear{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2em;
+    .texthero{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding:20px;
+        color: white;
+        z-index: 2;
+    }
+    h1{
+        font-size: 22px;
+        @include roboto;
+    }
+    small{
+        color: grey;
+        font-family: 'Roboto', sans-serif;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0,0,36);
+        background: linear-gradient(0deg, rgba(0,0,36,1) 0%, rgba(0,212,255,0) 62%);
+        z-index: 1;
+}
+}
+
+.mostrecent{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    h3{
+        @include bar;
+        font-size: 18px;
+    }
+    
+    .littlebutton{
+        background-color: rgb(134, 190, 50);
+        display: inline;
+        padding: 5px 7px;
+        border-radius: 5px;
+        font-family: 'Barlow', sans-serif;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}
+
+.mostrecentsmall{
+    display: grid;
+    gap: 1em;
+}
+.mostrecentsmall1,.mostrecentsmall2{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    gap:1em
+
+}
+.mostrecentsmalltext{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+    span{
+        @include roboto;
+        font-size:  16px;
+        @include trans;
+        cursor: pointer;
+    }
+    span:hover{
+        color: rgb(218, 14, 14);
+    }
+    small{
+        @include bar;
+        color: rgba(128, 128, 128, 0.547);
+    }
+}

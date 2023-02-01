@@ -1,12 +1,13 @@
 @mixin trans  {
     transition: .3s all ease-in-out;
 }
-@mixin bar{
+@mixin bar {
     font-family: 'Barlow', sans-serif;
 }
-@mixin roboto{
+@mixin roboto {
     font-family: 'Roboto', sans-serif;
 }
+
 @mixin center{
     position: absolute;
     top:50%;

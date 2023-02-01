@@ -1,0 +1,10 @@
+.trendingnews{
+    @include page;
+    background: #f4f4f4;
+    margin-top: 2em;
+}
+.imgtrendingcontainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
