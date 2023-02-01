@@ -1,0 +1,7 @@
+a{
+    text-decoration: none;
+    color: rgb(159, 150, 150);
+}
+.wrapper{
+    @include page;
+}

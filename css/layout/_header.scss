@@ -1,0 +1,74 @@
+// premier header
+.trendingtitle{
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    display: flex;
+    @include roboto;
+    font-size: 14px
+}
+.trendingtitlecontainer{
+    @include page;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    .left i{
+        
+        color: #ff2143;
+        margin-right: 5px;
+    }
+    .right i{
+        padding-right: 15px;
+    }
+    span:nth-of-type(1){
+        text-transform: uppercase;
+    }
+}
+// deuxieme header
+.logo{
+   @include page;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding:7px 0
+}
+
+// navigation
+
+nav{
+    background-color: #ff2143;
+}
+.navwrapper{
+    display: grid;
+    grid-template-columns: 8fr 2fr 1fr;
+    height: 80px;
+    @include page;
+    @include roboto;
+}
+.linksheader, .socialright, .searchbutton{
+    display: flex;
+    align-items: center;
+    border-left:1px solid white ;
+    
+    a{
+        text-transform: uppercase;
+        color: white;
+        padding: 0 15px;
+        @include trans;
+        font-size: 15px;
+        
+    }
+    
+}
+.searchbutton{
+    justify-content: center;
+    border-right: 1px solid white;
+}
+
+// transition socials
+
+.socialright a:hover{
+    transform: matrix3d(-1,0,0.00,0,0.00,1,0.00,0,0,0,-1,0,0,0,0,1);
+-webkit-transform: matrix3d(-1,0,0.00,0,0.00,1,0.00,0,0,0,-1,0,0,0,0,1);
+}
