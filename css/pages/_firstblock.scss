@@ -2,19 +2,16 @@
     margin-top: 20px;
     margin-bottom: 30px;
     display: grid;
-    grid-template-columns: 6fr 4fr;
-    row-gap: 2em;
+    grid-template-columns: 3fr 2fr;
     column-gap: 2em;
-    .business{
-        background: url(../../img/trending/trending_top02.jpg)center/cover no-repeat;
+    @media screen and (max-width:1000px) {
+        grid-template-columns: 1fr;
+       
     }
 
-       
     img{
         width: 100%;
          display: block;
-              
-        
     }
    .fashion,.tech,.business{
     position: relative;
@@ -32,6 +29,12 @@
             background: linear-gradient(0deg, rgba(0,0,36,1) 0%, rgba(0,212,255,0) 62%);
             z-index: 1;
     }
+    
+    }
+    .business{
+        
+    background: url(../../img/trending/trending_top02.jpg)center/cover no-repeat;
+  
 }
 
 .texthero{
@@ -63,6 +66,7 @@
         text-transform: uppercase;
         font-size: 12px;
     }
+
    
    
 }

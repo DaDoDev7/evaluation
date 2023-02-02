@@ -1,0 +1,63 @@
+.contact{
+    h1{
+        font-size: 30px;
+        font-weight: 500;
+        @include bar;
+        margin-top: 0;
+    }
+}
+
+iframe{
+    margin: 80px 0;
+}
+.buttonform{
+    padding: 20px 40px;
+    @include bar;
+    text-transform: uppercase;
+    border: red 1px solid;
+    color: red;
+    width: 150px;
+    text-align: center;
+    margin:30px 0;
+    margin-bottom: 40px;
+    font-size: 13px;
+    @include trans;
+    cursor: pointer;
+}
+.buttonform:hover{
+    background-color:red;
+    color: white;
+}
+
+
+
+.forms{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 2em;
+    margin-bottom: 40px;
+    input,textarea{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #e5e6e9;
+        @include bar;
+        font-size: 13px;
+        &:focus{
+            outline: none;
+            &::placeholder{
+                color: transparent;
+            }
+        }
+        
+    }
+   
+      
+}
+
+.formline2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    @include roboto;
+}

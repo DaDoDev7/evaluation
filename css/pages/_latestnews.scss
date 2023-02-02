@@ -1,0 +1,44 @@
+.latestnews .secondblock .news{
+    grid-template-columns: 7fr 2fr;
+    @media screen and (max-width:1000px){
+        grid-template-columns: 1fr;
+        
+    }
+   
+}
+
+
+
+.latestnews .newsleftcontainer{
+    grid-template-columns: 1fr;
+    padding: 10px;
+    h1{
+        color: #051441;
+        font-weight: 900;
+        @include roboto;
+    }
+    span{
+        line-height: 30px;
+        font-size: 15px;
+        color: #506172;
+        @include bar;
+    }
+}
+.latestnews .imgbanner {
+    @media screen and (max-width:1000px){
+       display: none;
+        
+    }
+
+}
+
+//Share Buttons
+
+.share{
+    
+    display: flex;
+    align-items: center;
+    a{
+        margin-left: 30px;
+    }
+}

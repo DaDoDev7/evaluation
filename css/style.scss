@@ -1,16 +1,40 @@
 
 @import 'abstracts/mixins';
-@import 'abstracts/variables';
 @import 'base/normalize';
 @import 'base/typographie';
 @import 'layout/global';
-@import 'pages/header';
-@import 'layout/nav';
+
+//HOME
+
 @import 'pages/firstblock';
 @import 'pages/secondblock';
 @import 'pages/thirdblock';
+
+//TRENDING
+
 @import 'pages/trendingnews';
+
+// HEADER
+
+@import 'pages/header';
+
+// FOOTER
+
 @import 'pages/footer';
 
+// ABOUT
+
 @import 'about/about';
+
+// CATEGORY
+
+@import 'category/category';
+
+//LATESTNEWS
+
+@import 'pages/latestnews';
+
+// CONTACT
+
+@import 'pages/contact'
 
