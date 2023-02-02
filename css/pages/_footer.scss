@@ -1,0 +1,74 @@
+.footerbanner{
+    @include page;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+    cursor: pointer;
+}
+
+//Footer
+
+footer{
+    background-color: black;
+    padding: 150px;
+}
+.footercontainer{
+    @include page;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2em;
+    color: rgb(245, 235, 235);
+    @include roboto;
+   
+    
+    img{
+        width: 100%;
+}
+.columnfooter:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 14px;
+    color: #9fa6bd;
+    padding: 30px;
+    
+    
+    img{
+    width: 40%;
+    margin-left: 0;
+       
+    }
+}
+.popularpostwrapper{
+   display: flex; 
+   flex-direction: column;
+   justify-content: space-around;
+}
+.popularpostimg{
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+    gap: 1em;
+    align-items: center;
+    padding: 10px;
+}
+.textpopularpost{
+    span{
+        font-size: 16px;
+        font-weight: 600;
+        @include trans;
+        cursor: pointer;
+    }
+    span:hover{
+        color: red;
+
+    }
+    small{
+        font-size: 13px;
+    }
+}
+}
+.columnfooterbanner{
+    padding: 30px;
+    cursor: pointer;
+}

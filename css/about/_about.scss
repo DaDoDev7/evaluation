@@ -1,0 +1,160 @@
+.ourmission_vision{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    @include page;
+    @include bar;
+    
+}
+.textwrapperourmission{
+    padding: 40px 0;
+    @include page;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  
+}
+.ourmissiontext{
+    width:70%;
+    line-height: 30px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    h1{
+        margin-bottom: 23px;
+    }
+  
+}
+hr{
+    color: #ff2143;
+    border: 1px solid;
+    width: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+//ourbestservices
+
+.ourbestservices{
+    background: url(../../img/gallery/section_bg02.jpg);
+    @include roboto;
+    
+}
+.ourbestserviceswrapper{
+    @include page;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    width:70%;
+    padding:50px 0;
+    @media screen and (max-width:1000px) {
+        grid-template-columns: 1fr;
+        
+    } 
+}
+.bestservicesimg,.bestservicestext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.bestservicestext{
+    margin-left: 30px;
+    justify-content: space-around;
+    padding: 50px 0;
+    small{
+        text-transform: uppercase;
+        color: rgb(207, 24, 24);
+        font-weight: 600;
+        @media screen and (max-width:1000px){
+            color: black;
+        }
+    }
+    h2{
+        font-size: 50px;
+        font-weight: 700;
+    }
+    bold{
+        font-weight: 700
+    }
+    span{
+        font-weight:300;
+    }
+    .moreaboutus{
+        background-color: #ff2143;
+        width:180px;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        border-radius: 3px;
+        margin-top: 20px;
+        @include trans;
+        &:hover{
+            background-color: #b42339
+        }
+        @include bar;
+        cursor: pointer;
+        @media screen and (max-width:1000px){
+            background-color: black;
+            color: #ff2143;
+            &:hover{
+                background-color: rgb(249, 238, 238);
+            }
+        }
+    }
+
+}
+
+//our team members
+.ourteam_members{
+    margin:50px 0;
+}
+
+.ourteam_memberswrapper{
+    @include page;
+    @include bar;
+    width: 70%;
+    margin-bottom: 30px;
+}
+.ourteam_membertext{
+    
+    @include bar;
+    small{
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #ff2143;
+
+    }
+    h1{
+        margin-bottom: 40px;
+    }
+
+}
+.portraitwrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2em;
+    @media screen and (max-width:1200px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width:768px) {
+        grid-template-columns: 1fr;
+    }
+}
+.portrait{
+    h4{
+        @include bar;
+        color :#161e46;
+        font-size: 25px;
+
+    }
+
+}
+ 
+   

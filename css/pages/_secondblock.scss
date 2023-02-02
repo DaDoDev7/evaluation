@@ -13,14 +13,16 @@
 
 //colonne gauche 
 
+
 .newsleft{
     background-color: white;
     border-radius: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    height: 600px;
+   
     margin-bottom: 2em;
+    @include roboto;
     .textnewsleft{
         @include roboto;
         display: flex;
@@ -29,31 +31,104 @@
         padding: 10px;
     }
 }
-.newsleftcontainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2em;
-    padding: 10px;
-    
-}
-.smallnews{
-    display: grid;
-    grid-template-columns: 4fr 8fr;
-    gap: 1em;
-}
-.textsmallnews{
-    @include roboto;
-   padding: 5px;
+.columnleft_left{
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
     justify-content: space-evenly;
-    h6{
-        margin:0;
+    h2{
+        @include trans;
+        cursor: pointer;
+    }
+    h2:hover{
+        color: red;
+    }
+    span{
+        font-size: 16px;
     }
     small{
         font-size: 12px;
     }
+}
+.textnewsleft{
+    font-size: 17px;
+    .links a{
+        color: black;
+        @include trans;
+        margin-left: 10px;
+    }
+    .links a:hover{
+        color: red;
+    }
+}
+.newsleftcontainer{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2em;
+    padding: 10px;
+    
+}
+.columnleft_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.smallnews{
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 1em;
+    span{
+        font-weight: 600;
+    }
+    #_2{
+        color: red
+    }
+    #_3{
+        color: rgb(33, 33, 177)
+    }
+    #_4{
+        color: brown
+    }
+}
+.textsmallnews{
+    @include roboto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-evenly;
+    span{
+        text-transform: uppercase;
+        font-size: 11px;
+        margin-top:5px;
+        margin-bottom: 5px;
+        color: greenyellow;
+    }
+    h6{
+        margin:0;
+        @include trans;
+        cursor: pointer;
+    }
+    h6:hover{
+        color: red;
+    }
+    small{
+        font-size: 12px;
+    }
+}
+
+//scale Image
+.scaleimg{
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.scaleimg img{
+    @include trans;
+    display: block;
+}
+
+.scaleimg:hover img{
+    transform: scale(1.1);
 }
 
 //news right
@@ -134,7 +209,7 @@
 
 .mostrecent{
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     h3{
         @include bar;

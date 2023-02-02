@@ -14,7 +14,6 @@
     align-items: center;
     color: gray;
     .left i{
-        
         color: #ff2143;
         margin-right: 5px;
     }
@@ -49,21 +48,30 @@ nav{
 .linksheader, .socialright, .searchbutton{
     display: flex;
     align-items: center;
-    border-left:1px solid white ;
-    
     a{
         text-transform: uppercase;
         color: white;
         padding: 0 15px;
         @include trans;
         font-size: 15px;
-        
     }
-    
+       
+}
+.linksheader a{
+    border-right: 1px solid white;
+    &:nth-of-type(5){
+        border-right: none;
+    }
+}
+.socialright{
+    display: flex;
+    justify-content: center;
+    border-left: 1px solid white;
 }
 .searchbutton{
     justify-content: center;
     border-right: 1px solid white;
+    border-left: 1px solid white;
 }
 
 // transition socials

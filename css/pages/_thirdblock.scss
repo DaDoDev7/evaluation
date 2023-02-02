@@ -25,7 +25,23 @@
     }
 
 }
+
 .mostpopularimgwrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+  
+}
+.mostpopularimg{
+    display: flex;
+    flex-direction: column;
+    span{
+        @include trans;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    span:hover{
+        color: red;
+    }
+    
 }
