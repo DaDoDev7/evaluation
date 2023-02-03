@@ -151,6 +151,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 2em;
+    justify-content: center;
     @media screen and (max-width:1200px) {
         grid-template-columns: 1fr 1fr;
     }
