@@ -10,8 +10,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-     margin-left: 3em;
-  
+     margin:4em 0 4em 1em;
+    
   
 }
 .ourmissiontext{
@@ -58,7 +58,20 @@ hr{
 .bestservicesimg,.bestservicestext{
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+    img
+        {margin:0 auto;
+        @media screen and (max-width:1000px) {
+            width: 80%;
+            
+        }
+        @media screen and (max-width:768px) {
+            width: 100%;
+
+            
+        }
+
+    }
 }
 .bestservicestext{
     margin-left: 30px;
@@ -75,6 +88,7 @@ hr{
     h2{
         font-size: 50px;
         font-weight: 700;
+        @include bar;
     }
     bold{
         font-weight: 700

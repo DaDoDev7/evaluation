@@ -1,5 +1,5 @@
 .latestnews .secondblock .news{
-    grid-template-columns: 7fr 2fr;
+    grid-template-columns: 4fr 2fr;
     @media screen and (max-width:1000px){
         grid-template-columns: 1fr;
         
@@ -25,7 +25,7 @@
     }
 }
 .latestnews .imgbanner {
-    w
+    width: 100%;
     @media screen and (max-width:1000px){
        display: none;
         
