@@ -51,6 +51,7 @@ footer{
     gap: 1em;
     color: #9fa6bd;
     padding: 30px 0 0;
+    @include bar;
     img{
     width: 40%;
     margin-left: 0;
