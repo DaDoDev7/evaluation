@@ -4,11 +4,15 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     column-gap: 2em;
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width:1200px) {
         grid-template-columns: 1fr;
-       
+        grid-template-rows: 1fr 1fr;
+        .business{
+            margin-bottom: 2em;
+        }
+        
     }
-
+  
     img{
         width: 100%;
          display: block;
@@ -17,7 +21,7 @@
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    
+
        &::before{
             content: '';
             position: absolute;
@@ -27,14 +31,14 @@
             height: 100%;
             background: rgb(0,0,36);
             background: linear-gradient(0deg, rgba(0,0,36,1) 0%, rgba(0,212,255,0) 62%);
-            z-index: 1;
+            z-index: 2;
     }
-    
+
     }
     .business{
-        
+
     background: url(../../img/trending/trending_top02.jpg)center/cover no-repeat;
-  
+      
 }
 
 .texthero{
@@ -48,7 +52,7 @@
     h1{
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
-        transition: .3s all ease-in-out;  
+        transition: .3s all ease-in-out;
     }
     h1:hover{
         color: #ff2143 ;
@@ -67,8 +71,8 @@
         font-size: 12px;
     }
 
-   
-   
+
+
 }
 }
 #button1{
@@ -85,7 +89,14 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
+    @media screen and (max-width:768){
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
     h1{
         font-size: 22px;
     }
+   
+   
 }

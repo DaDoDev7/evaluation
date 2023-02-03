@@ -2,6 +2,17 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 2em;
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr;
+        
+    }
+
+}
+.thirdblock>img{
+    @media screen and (max-width: 768px){
+        display: none;
+        
+    }
 }
 .mostpopular{
     display: flex;
@@ -30,6 +41,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
+    @media screen and (max-width: 1400px){
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr;
+        
+    }
   
 }
 .mostpopularimg{

@@ -9,6 +9,14 @@
     grid-template-columns: repeat(3,1fr);
     justify-content: center;
     gap: 3em;
+    @media screen and (max-width: 1400px){
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr;
+        
+    }
 }
 .imgtrending{
     display: flex;

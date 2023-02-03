@@ -1,4 +1,5 @@
 .contact{
+    width: 80%;
     h1{
         font-size: 30px;
         font-weight: 500;
@@ -36,12 +37,21 @@ iframe{
     grid-template-columns: 5fr 2fr;
     gap: 2em;
     margin-bottom: 40px;
+    @include roboto;
+    @media screen and (max-width:1200px) {
+        grid-template-columns: 1fr;
+        
+    } 
+    span{
+        font-size: 16px;
+        color: #8a8a8a;
+        line-height: 30px;
+    }
     input,textarea{
         width: 100%;
         padding: 10px;
         margin-bottom: 20px;
         border: 1px solid #e5e6e9;
-        @include bar;
         font-size: 13px;
         &:focus{
             outline: none;
@@ -49,6 +59,7 @@ iframe{
                 color: transparent;
             }
         }
+       
         
     }
    
@@ -60,4 +71,27 @@ iframe{
     grid-template-columns: 1fr 1fr;
     gap: 1em;
     @include roboto;
+}
+.formright{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    @media screen and (max-width:1200px) {
+       justify-self: auto;
+        
+    } 
+
+
+
+    &>*{
+        display: flex;
+        margin:1em 0;
+    }
+
+    i{
+        color: #8a8a8a;
+        margin-right: 2em;
+        font-size: 25px;
+        
+    }
 }

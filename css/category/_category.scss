@@ -1,19 +1,25 @@
+.category{
+    width: 80%;
+}
+
 .newsleft,.newsright{
     margin-top:3em;
 }
 
 .posterimg{
   margin: 0 auto;
-    width: 70%;
+    width: 60%;
+    cursor: pointer;
     @media screen and(max-width:1000px) {
         display: none;
         
     }
 }
 .category .newsleftcontainer{
+    display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: flex-start;
-    @include roboto;
+    @include bar;
     span{
         line-height: 30px;
         font-size: 16px;
@@ -30,11 +36,20 @@
 
 .category .columnleft_right>*,.category .columnleft_left>*{
     margin-bottom: 20px;
+    @include bar;
+    line-height: 28px;
+    h2{
+        font-size: 24px
+    }
 }
 .category .columnleft_right{
+    gap: initial;
+    grid-template-columns: 1fr;
     h2{
         @include trans;
         cursor: pointer;
+        font-size: 24px;
+        
     }
     h2:hover{
         color: red;
