@@ -139,6 +139,7 @@ nav{
             border: 2px solid white;
             border-radius: 5px;
             @include trans;
+            background-color: white;
         
         }
      @media screen and (max-width:768px) {
@@ -148,16 +149,16 @@ nav{
         align-items: center;
         }   
 }
-.burgermenu:hover {
-    &:nth-of-type(1) {
-
-        transform: rotate(45deg);
-      }
-      &:nth-of-type(2) {
-        
-        transform: rotate(-45deg);
-      }
+.change .line:nth-child(1) {
+    opacity: 0;
+    transform: translateX(-100%);
 }
+
+.change .line:nth-child(3) {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
 //logo responsive
 
 .logoresponsive{
